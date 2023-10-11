@@ -26,8 +26,8 @@ Shery.imageEffect("#back", {
     gooey: true,
 });
 
-let elem = document.querySelectorAll(".elem");
-elem.forEach(function (elems) {
+let elems = document.querySelectorAll(".elem");
+elems.forEach(function (elems) {
     let h1s = elems.querySelectorAll("h1");
     let index = 0;
     let animation = false;
