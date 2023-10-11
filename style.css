@@ -9,6 +9,11 @@ html, body{
     height: 100%;
 }
 
+@font-face {
+    font-family: Kajiro-Bold;
+    src: url(fonts/Kajiro-Bold.ttf);
+}
+
 #main {
     width: 100%;
     height: 100vh;
@@ -78,8 +83,23 @@ html, body{
 
 #hero-left{
     min-width: 50%;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
+
+#hero-left .elem{
+    height: 9vw;
+    overflow: hidden;
+    
+}
+
+#hero-left .elem h1 {
+    line-height: .9;
+    font-family: "kajiro-Bold";
+    color: #fff;
+    font-weight: 100;
+    font-size: 11vw;
+}
+
 #hero-right{
     min-width: 25%;
     background-color: green;
