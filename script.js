@@ -26,29 +26,29 @@ Shery.imageEffect("#back", {
     gooey: true,
 });
 
-// let elem = document.querySelectorAll(".elem");
-// elem.forEach(function (elems) {
-//     let h1s = elems.querySelectorAll("h1");
-//     let index = 0;
-//     let animation = false;
-//     document.querySelector("#main").addEventListener("click", () => {
-//         if (!animation) {
-//             animation = true;
-//             gsap.to(h1s[index], {
-//                 top: "-=100%",
-//                 ease: Expo.easeInOut,
-//                 duration: 1,
-//                 onComplete: function () {
-//                     gsap.set(this._targets[0], { top: "100%" });
-//                     animation = false;
-//                 },
-//             });
-//             index === h1s.length - 1 ? (index = 0) : index++;
-//             gsap.to(h1s[index], {
-//                 top: "-=100%",
-//                 ease: Expo.easeInOut,
-//                 duration: 1,
-//             });
-//         }
-//     });
-// });
+let elem = document.querySelectorAll(".elem");
+elem.forEach(function (elems) {
+    let h1s = elems.querySelectorAll("h1");
+    let index = 0;
+    let animation = false;
+    document.querySelector("#main").addEventListener("click", () => {
+        if (!animation) {
+            animation = true;
+            gsap.to(h1s[index], {
+                top: "-=100%",
+                ease: Expo.easeInOut,
+                duration: 1,
+                onComplete: function () {
+                    gsap.set(this._targets[0], { top: "100%" });
+                    animation = false;
+                },
+            });
+            index === h1s.length - 1 ? (index = 0) : index++;
+            gsap.to(h1s[index], {
+                top: "-=100%",
+                ease: Expo.easeInOut,
+                duration: 1,
+            });
+        }
+    });
+});
