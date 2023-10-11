@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: cursive;
 }
 
 html, body{
@@ -25,6 +26,7 @@ html, body{
     background-color: black;
 }
 #top {
+    pointer-events: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -61,6 +63,7 @@ html, body{
 }
 
 #nav a{
+    pointer-events: all;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 13px;
@@ -87,12 +90,19 @@ html, body{
 }
 
 #hero-left .elem{
+    position: relative;
     height: 9vw;
     overflow: hidden;
-    
+}
+
+#hero-left .elem h1:nth-child(1){
+    top: 0;
 }
 
 #hero-left .elem h1 {
+    position: absolute;
+    top: 100%;
+    left: 0;
     line-height: .9;
     font-family: "kajiro-Bold";
     color: #fff;
@@ -101,6 +111,8 @@ html, body{
 }
 
 #hero-left button{
+    pointer-events: all;
+    cursor: pointer;
     padding: 1vw 3vw;
     font-size: 4vw;
     margin-top: 2vw;
@@ -108,6 +120,28 @@ html, body{
 }
 
 #hero-right{
-    min-width: 25%;
-    background-color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 20%;
+    color: #fff;
+}
+#hero-right p{
+    text-align: right;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+#hero-right #imagediv{
+    width: 100%;
+    height: 150px;
+    background-image: url(https://images.unsplash.com/photo-1609175858596-198e97287a07?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTEyfHxwb3J0cmFpdHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#hero-right p:nth-child(3){
+    margin-bottom: 100px;
 }
