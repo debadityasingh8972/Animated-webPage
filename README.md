@@ -8,7 +8,7 @@ This is a little project after learning html, css & Javascript. The cool animati
 ## Demo 
 
 
-https://github.com/debadityasingh8972/Animated-webPage/images/Screenshot1
+![Screenshot](https://github.com/debadityasingh8972/Animated-webPage/images/Screenshot1)
 
 
 ## Tech Stack
